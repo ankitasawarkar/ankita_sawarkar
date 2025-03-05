@@ -1,0 +1,323 @@
+{
+  "name": "Ankita Sawarkar",
+  "title": "Technical Expert",
+  "description": "A passionate individual who always thrives to work on end-to-end products which develop sustainable and scalable social and technical systems to create impact.",
+  "socialMedia": [
+    {
+      "name": "Github",
+      "link": "https://github.com/ankitasawarkar",
+      "fontAwesomeIcon": "fab fa-github",
+      "backgroundColor": "#181717"
+    },
+    {
+      "name": "LinkedIn",
+      "link": "https://www.linkedin.com/in/ankitasawarkar/",
+      "fontAwesomeIcon": "fab fa-linkedin-in",
+      "backgroundColor": "#0077B5"
+    }
+  ],
+  "about": [
+    {
+      "title": "Data Science & AI",
+      "subTitle": "Data Science & AI",
+      "logo_path": "DataScienceImg",
+      "description": [
+        "⚡ Developing highly scalable production-ready models for various deep learning and statistical use cases",
+        "⚡ Experience working with Computer Vision and NLP projects",
+        "⚡ Complex quantitative modeling for dynamic forecasting and time series analysis"
+      ],
+      "skills": [
+        "Python",
+        "TensorFlow",
+        "Keras",
+        "Deep Learning"
+      ]
+    },
+    {
+      "title": "Full Stack Development",
+      "logo_path": "FullStackImg",
+      "description": [
+        "⚡ Developing backend REST API applications in Java, Python, FastAPI, SQL and NoSQL database",
+        "⚡ Building responsive website front end using React-Redux",
+        "⚡ Creating microservice application in Spring Frameworks"
+      ],
+      "skills": [
+        "JAVA",
+        "Python",
+        "Spring Frameworks",
+        "Hibernate",
+        "HTML5",
+        "CSS",
+        "ReactJS",
+        "FastAPI",
+        "SQL",
+        "MongoDB"
+      ]
+    },
+    {
+      "title": "Cloud Services",
+      "logo_path": "CloudInfraImg",
+      "description": [
+        "⚡ Practice working on cloud platforms",
+        "⚡ Hosting and maintaining websites on virtual machine instances along with integration of databases",
+        "⚡ Deploying deep learning models on cloud to analyses model performance with hug data samples."
+      ],
+      "skills": [
+        "AWS",
+        "Terraform",
+        "Docker",
+        "Kubernetes"
+      ]
+    }
+  ],
+  "education": {
+    "title": "Education",
+    "subTitle": "Basic Qualification and Certifcations",
+    "header_image_path": "education.svg",
+    "degrees": [
+      {
+        "title": "Indian Institute of Information Technology Madras",
+        "subtitle": "Advanced Certification in Data Science and AI",
+        "logo_path": "iitm_logo.jpeg",
+        "alt_name": "IITM",
+        "duration": "2022 - 2023",
+        "descriptions": [
+          "⚡ I have taken varity of courses related to Artificial Intelligence which correspond to Explainable AI, Machine Learning, Statistics, E etc.",
+          "⚡ Apart from this, I have also learn on Deep Learning, Data Science, Cloud Computing. As part of it, I have worked on creating new models in Image processing and NLP.",
+          "⚡ During my time at course, I have done many projects bases on Predictive Analysis, Data Analysis using PowerBI, Tablue for data presentation.",
+          "⚡  As a part of this, I have developed models and attente interviews."
+        ],
+        "website_link": "https://intellipaat.com/",
+        "document_link": "documents/intelipaat.pdf"
+      },
+      {
+        "title": "C-DAC: Centre for Development of Advanced Computing, India",
+        "subtitle": "Post Graduation Diploma in Computer Science",
+        "logo_path": "cdac_logo.png",
+        "alt_name": "Centre for Development of Advanced",
+        "duration": "2016 - 2017",
+        "descriptions": [
+          "⚡ I have taken varity of courses related to Computer Science and Information Technologies which correspond to Explainable Software Design, Development, Testing, Deplyment etc.",
+          "⚡ Apart from this, I have also learn Database Managment, Cloud Computing and Full Stack Development.. ",
+          "⚡ As part of it, I have worked on creating new demanding creative softwares in JAVA, SQL, React with proper design and deployment.",
+          "⚡ During my time at institute, I was top five in department and worked on multiple projects and interviews."
+        ],
+        "website_link": "https://www.cdac.in/",
+        "document_link": "documents/CDACcertificate.jpg"
+      },
+      {
+        "title": "Rashtrasant Tukadoji Maharaj Nagpur University",
+        "subtitle": "B.Tech. in Electronics Engineering",
+        "logo_path": "rtmnu_logo.png",
+        "alt_name": "RTMNU",
+        "duration": "2011 - 2015",
+        "descriptions": [
+          "⚡ I have studied basic electronics engineering subjects along with programing basics like DS, Algorithms, DBMS, OS, etc.",
+          "⚡ Apart from this, I have done courses on C++, JAVA."
+        ],
+        "website_link": "https://nagpuruniversity.ac.in/",
+        "document_link": "documents/BEdegree.jpg"
+      }
+    ],
+    "certificates": [
+      {
+        "title": "ChatGPT Prompt Engineering for Developers",
+        "subtitle": "- DeepLearning.ai",
+        "logo_path": "deeplearning_logo.png",
+        "certificate_link": ""
+      },
+      {
+        "title": "Project Management Foundation",
+        "subtitle": "- LinkedIn Learning",
+        "logo_path": "linkedin_certificate_logo.png",
+        "certificate_link": ""
+      },
+      {
+        "title": "Deep Learning",
+        "subtitle": "- Andrew Ng",
+        "logo_path": "deeplearning_logo.png",
+        "certificate_link": "https://coursera.org/share/0bc6b512ada93233ad373eaf0160d87f"
+      },
+      {
+        "title": "Statistics Foundations 1: The Basics ",
+        "subtitle": "- LinkedIn",
+        "logo_path": "linkedin_certificate_logo.png",
+        "certificate_link": "https://www.linkedin.com/learning/certificates/7ecabf617d326f6c39ff848790f5d8f90f73bdb7cdf54c7ca1a25f5669ac592e"
+      },
+      {
+        "title": "Microsoft Certified: Azure Fundamentals",
+        "subtitle": "- Microsoft",
+        "logo_path": "microsoft_logo.png",
+        "certificate_link": "https://www.credly.com/users/ankita-sawarkar.fe5bcb1e"
+      },
+      {
+        "title": "SQL (Basic, Intermediate, Advanced)",
+        "subtitle": "- Hackerank",
+        "logo_path": "hacker_rank_logo.png",
+        "certificate_link": "https://www.hackerrank.com/certificates/9d650ca2e4ac"
+      },
+      {
+        "title": " Data Science Foundations",
+        "subtitle": "- IBM",
+        "logo_path": "ibm_certificate_logo.png",
+        "certificate_link": "https://www.credly.com/users/ankita-sawarkar.fe5bcb1e"
+      },
+      {
+        "title": "Data Science Foundations - Level 2 ",
+        "subtitle": "- IBM",
+        "logo_path": "ibm_certificate_logo.png",
+        "certificate_link": "https://www.credly.com/users/ankita-sawarkar.fe5bcb1e"
+      },
+      {
+        "title": "Docker Essentials: A Developer Introduction",
+        "subtitle": "- IBM",
+        "logo_path": "ibm_certificate_logo.png",
+        "certificate_link": "https://www.credly.com/users/ankita-sawarkar.fe5bcb1e"
+      },
+      {
+        "title": "Enterprise Design Thinking Practitioner",
+        "subtitle": "- IBM",
+        "logo_path": "ibm_certificate_logo.png",
+        "certificate_link": "https://www.credly.com/users/ankita-sawarkar.fe5bcb1e"
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experience",
+    "subTitle": "I have worked with many evolving startups as ML and DL Developer, Designer and Software Architect. I have also worked with some well established companies mostly as AI Developer. I love organising events and that is why I am also involved with many opensource communities as a representative.",
+    "header_image_path": "experience.svg",
+    "experiences": [
+      {
+        "title": "Application Developer",
+        "company": "IBM",
+        "company_url": "https://www.ibm.com/in-en",
+        "logo_path": "ibm_logo1.png",
+        "duration": "March 2020 - April 2023",
+        "location": "Pune, India",
+        "description": [
+          "I worked on automating insurance products. Improving service performance by converting monolithic architecture services to microservice with JAVA, SQL, React and AWS cloud services. Experience working on automate data analysis process from database with Python libraries, etc. Working on modeling data with Natural Language Processing (NLP) pretaining and annotating with finetuning strategies."
+        ]
+      },
+      {
+        "title": "Software Engineer",
+        "company": "Zensar",
+        "company_url": "https://www.zensar.com/",
+        "logo_path": "zensar_logo.png",
+        "duration": "July 2019 - March 2020",
+        "location": "Pune, India",
+        "description": [
+          "I worked on e-commerce products service application. The projects involve automation for process improvements and for significantly enhancing the profits. I am currently working invoice tickets grouping and prediction common issue to fast foreword response, prioritize overall process. Our goal is to make AI system which scales and removes support dependency as much as possible."
+        ]
+      },
+      {
+        "title": "Software Engineer",
+        "company": "Alight Solutions",
+        "company_url": "https://www.alight.com",
+        "logo_path": "alight_logo.jpeg",
+        "duration": "March 2019 - June 2019",
+        "location": "Mumbai, Maharashtra",
+        "description": [
+          "Developed a standalone system to access reports based on criteria from the MongoDB database for Workday system by reducing conversion time by 70%."
+        ]
+      },
+      {
+        "title": "Software Developer",
+        "company": "Mobitrail",
+        "company_url": "https://www.mobitrail.com/",
+        "logo_path": "mobitrail.png",
+        "duration": "May 2017 - Feb 2019",
+        "location": "Mumbai, Maharashtra",
+        "description": [
+          "I have created complete Web Application for bank HRMS system. I have also worked on implementation of algorithms based on requirements, complete REST API backend, frontend, database mapping and deployment. I experienced the real time start up. I was involved in a team for creating complete software architecture of mobile and web application as well as admin panel for company."
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "subTitle": "I have worked with many evolving startups as ML and DL Developer, Designer and Software Architect. I have also worked with some well established companies mostly as AI Developer. I love organising events and that is why I am also involved with many opensource communities as a representative. <br> My projects makes use of vast variety of latest technology tools. My best experience is to create Data Science projects and deploy them to web applications using cloud infrastructure.",
+    "header_image_path": "project.svg",
+    "projects": [
+      {
+        "title": "Research Analysis Tool",
+        "description": [
+          "Developed LLM-based Chatbot for Research analysis to get relevant responses from specific articles by document upload and URL link using Vector database semantic search"
+        ],
+        "link": "/project-a",
+        "logo_path": "project-a.png",
+        "creation_on": "2023-04-13",
+        "skills": [
+          "LLM",
+          "LangChain",
+          "OpenAI",
+          "Streamlit",
+          "Weaviate",
+          "Hybrid Search"
+        ]
+      },
+      {
+        "title": "College Chatbot with internal database",
+        "description": [
+          "LLM Chatbot system for College, Implement OpenAI functionality, internal College database will provide all detailed information about the campus, students fees, and grad with conversation format."
+        ],
+        "link": "/project-b",
+        "logo_path": "project-b.png",
+        "creation_on": "2023-04-13",
+        "skills": [
+          "LLM",
+          "GPT",
+          "LangChain",
+          "OpenAI",
+          "FAISS",
+          "Prompt Engineering"
+        ]
+      },
+      {
+        "title": "Search Engine Application and CI/CD Pipeline using Jenkins",
+        "description": [
+          "Developed a Faiss-based similarity search engine, deployed on Streamlit.",
+          "Indexed project descriptions with SBERT for semantic search and improved accuracy.",
+          "Optimized search efficiency using cosine similarity and query indexing with Faiss.",
+          "Built a CI/CD pipeline for automated deployment, testing, security checks, and containerization.",
+          "Streamlined DevOps practices to accelerate releases and maintain competitive edge."
+        ],
+        "link": "https://github.com/example/project-b",
+        "logo_path": "project-b.png",
+        "creation_on": "2023-04-13",
+        "skills": [
+          "FAISS",
+          "SBERT (Siamese BERT)",
+          "Jenkins",
+          "Docker",
+          "AWS"
+        ]
+      },
+      {
+        "title": "Project D",
+        "description": [
+          "An AI model for text summarization."
+        ],
+        "link": "https://github.com/example/project-b",
+        "logo_path": "project-b.png",
+        "creation_on": "2023-04-13",
+        "skills": [
+          "Python",
+          "LLM"
+        ]
+      },
+      {
+        "title": "Project E",
+        "description": [
+          "An AI model for text summarization."
+        ],
+        "link": "https://github.com/example/project-b",
+        "logo_path": "project-b.png",
+        "creation_on": "2023-04-13",
+        "skills": [
+          "Python",
+          "LLM"
+        ]
+      }
+    ]
+  }
+}
