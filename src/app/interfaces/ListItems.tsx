@@ -12,13 +12,13 @@ export interface ListProject {
 }
 
 interface Experience {
-    title: String,
-    company: String,
-    company_url: String,
-    logo_path: String,
-    duration: String,
-    location: String,
-    description: String[]
+    title: string,
+    company: string,
+    company_url: string,
+    logo_path: string,
+    duration: string,
+    location: string,
+    description: string[]
 }
 
 export interface ListExperiences {
@@ -41,10 +41,10 @@ export interface ListDegrees {
 
 interface Certificate {
 
-    title: String;
-    subtitle: String;
-    logo_path: String;
-    certificate_link: String;
+    title: string;
+    subtitle: string;
+    logo_path: string;
+    certificate_link: string;
 }
 
 export interface ListCertificates {
@@ -53,10 +53,8 @@ export interface ListCertificates {
 
 interface ListItem {
     title: string;
-    imageName: string;
     description: string[];
     skills: string[];
-    skills_old: Skills[];
 }
 
 export interface ListItemsProps {

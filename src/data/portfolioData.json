@@ -20,7 +20,6 @@
   "about": [
     {
       "title": "Full Stack Development",
-      "logo_path": "FullStackImg",
       "description": [
         "⚡ Developing scalable REST APIs with TDD, ensuring seamless integration and efficient data processing using Mockito for testing.",
         "⚡ Building responsive website frontends using modern frameworks, optimizing user experience, performance, and accessibility across devices.",
@@ -48,8 +47,6 @@
     },
     {
       "title": "Data Science & AI",
-      "subTitle": "Data Science & AI",
-      "logo_path": "DataScienceImg",
       "description": [
         "⚡ Developing highly scalable models for various deep learning and statistical use cases.",
         "⚡ Experience working with Computer Vision and NLP projects.",
@@ -83,7 +80,6 @@
     },
     {
       "title": "Cloud Services",
-      "logo_path": "CloudInfraImg",
       "description": [
         "⚡ Practice working on cloud platforms",
         "⚡ Hosting and maintaining websites on virtual machine instances along with integration of databases",

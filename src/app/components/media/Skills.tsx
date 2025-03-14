@@ -6,7 +6,6 @@ interface SkillsProps {
 }
 
 const Skills = ({ skills }: SkillsProps) => {
-console.log("Skill text match: ",skills);
     return (
         <div className="flex  flex-wrap space-x-3" >
             {skills.map((skill, index) => (

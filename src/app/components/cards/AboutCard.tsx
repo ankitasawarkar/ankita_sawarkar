@@ -2,14 +2,15 @@ import { ListItemsProps } from '@/app/interfaces/ListItems'
 import React from 'react'
 import { getImageUrl } from '../utils'
 import Skills from '../media/Skills'
+import Image from 'next/image'
 
 const AboutCard: React.FC<ListItemsProps> = ({ data }) => {
     return (
         <>
             <div className="grid m-4 sm:grid-cols-12 gap-4 ">
-                <div className="sm:col-span-5 ">
-                    <img src={getImageUrl("aboutImage.png")}
-                        alt="Me sitting with a laptop" 
+                <div className="sm:col-span-5 w-full h-full relative">
+                    <Image src={getImageUrl("aboutImage.png")}
+                        alt="Me sitting with a laptop" fill  
                         className=' flex items-center justify-center'/></div>
                 <div className="p-8 sm:col-span-7 ">
                     {data.map((section, index) => (

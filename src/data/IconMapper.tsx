@@ -9,7 +9,7 @@ import { DiMsqlServer, DiMysql } from "react-icons/di";
 import { FaJava, FaGithubSquare, FaBitbucket, FaAws } from "react-icons/fa";
 import { getImageUrl } from "@/app/components/utils";
 
-export const skillIconMap = {
+export  const skillIconMap: { [key: string]: React.ReactNode } = {
 
   JAVA: <FaJava style={{ color: '#007396', fontSize: '45px' }} />,
 
