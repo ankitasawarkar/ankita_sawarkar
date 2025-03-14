@@ -1,29 +1,14 @@
 "use client";
 import React from 'react'
 import { getImageUrl } from '../utils';
+import {ListCertificates, chunkArray} from '../../interfaces/ListItems'
 
-interface Certificate {
-
-    title: String;
-    subtitle: String;
-    logo_path: String;
-    certificate_link: String;
-}
-
-interface CertificateProps {
-    data: Certificate[];
-}
-
-const Certificates: React.FC<CertificateProps> = ({ certificates }) => {
-    // console.log('certificates.length ', certificates.length);
-    if (!certificates || certificates.length === 0) {
+const Certificates: React.FC<ListCertificates> = ({ data }) => {
+    if (!data || data.length === 0) {
         return <div>Loading...</div>;
     }
-    // console.log('Certificates prop in DegreeCard:', certificates); // Debugging line
-    // const backgroundColor = "bg-sky-400";
-    // const textColor = "text-blue-950";
 
-    const chunkedCertificates = chunkArray(certificates, 4);
+    const chunkedCertificates = chunkArray(data, 4);
     return (
         <>
 
@@ -61,26 +46,9 @@ const Certificates: React.FC<CertificateProps> = ({ certificates }) => {
                     ))}
                 </div>
             ))}
-            {/* {certificates.map((certificate, index) => (
-            <div className=" m-10 grid sm:grid-cols-12 gap-4" key={index}>
-                <div className="sm:col-span-4 flex items-center justify-center">
-                    <img
-                        src={getImageUrl(`${certificate.logo_path}`)}
-                        alt={certificate.title} />
-                </div>
-            </div>
-        ))}; */}
+            
         </>
     )
-}
-
-// Utility function to chunk an array into smaller arrays of a specified size
-function chunkArray(array: Certificate[], chunkSize: number): Certificate[][] {
-    const result: Certificate[][] = [];
-    for (let i = 0; i < array.length; i += chunkSize) {
-        result.push(array.slice(i, i + chunkSize));
-    }
-    return result;
 }
 
 export default Certificates

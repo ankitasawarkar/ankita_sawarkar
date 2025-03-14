@@ -1,23 +1,10 @@
 "use client";
 import React, { useState } from 'react'
-import { getImageUrl } from '../utils';
 import Skills from '../media/Skills';
 import Buttons from '../button/Buttons';
+import {ListProject, chunkArray} from '../../interfaces/ListItems'
 
-interface Project {
-    title: string;
-    description: string[];
-    link: string;
-    logo_path: string;
-    creation_on: string;
-    skills: string[];
-}
-
-interface ProjectProps {
-    data: Project[]
-}
-
-const ProjectCard: React.FC<ProjectProps> = ({ data }) => {
+const ProjectCard: React.FC<ListProject> = ({ data }) => {
     if (!data || data.length === 0) {
         return <div>Loading...</div>;
     }
@@ -96,15 +83,6 @@ const ProjectCard: React.FC<ProjectProps> = ({ data }) => {
         ))}; */}
         </>
     )
-}
-
-// Utility function to chunk an array into smaller arrays of a specified size
-function chunkArray(array: Project[], chunkSize: number): Project[][] {
-    const result: Project[][] = [];
-    for (let i = 0; i < array.length; i += chunkSize) {
-        result.push(array.slice(i, i + chunkSize));
-    }
-    return result;
 }
 
 export default ProjectCard

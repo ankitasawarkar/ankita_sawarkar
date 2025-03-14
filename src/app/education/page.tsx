@@ -1,22 +1,19 @@
 import React from 'react'
 //import "./Education.module.css"
 import portfolio from '@/data/portfolioData.json'
-import { Navbar } from '../components/navbar/Navbar';
 import DegreeCard from '../components/cards/DegreesCards';
 import Certificates from '../components/cards/CertificatesCards';
+import NavbarModel from '../components/navbar/NavBarModel';
 
 const data = portfolio.education;
 const degrees = data.degrees;
 const certificates = data.certificates;
 const EducationPage = () => {
-  // console.log('Degrees data in EducationPage:', degrees);
-  // console.log('certificates.length ', certificates.length);
-  // const textColor = "text-indigo-950";
   return (
     <>
-      <Navbar />
+      <NavbarModel />
 
-      <div className="grid sm:grid-cols-12 gap-4 m-20 rounded  shdow-xl">
+      <div className="grid sm:grid-cols-12 gap-4 m-20 rounded shadow-xl">
         <div className=" mb-5 sm:col-span-12">
           <h1 className="text-[56px] font-normal font-google-sans leading-[1.1] text-center text-blue-500">
             {data.title}
@@ -31,7 +28,7 @@ const EducationPage = () => {
           </h1>
         </div>
         <div className="sm:col-span-12">
-          <DegreeCard degrees={degrees} />
+          <DegreeCard data={degrees} />
         </div>
 
         {certificates.length > 0 && (
@@ -43,7 +40,7 @@ const EducationPage = () => {
             </div>
 
             <div className="sm:col-span-12">
-              <Certificates certificates={certificates} />
+              <Certificates data={certificates} />
             </div>
           </>
         )}

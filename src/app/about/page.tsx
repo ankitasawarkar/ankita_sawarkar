@@ -1,7 +1,8 @@
 import React from 'react'
 import portfolioData from "@/data/portfolioData.json";
-import { Navbar } from '../components/navbar/Navbar';
+
 import AboutCard from '../components/cards/AboutCard';
+import Navbar from '../components/navbar/NavBarModel';
 const skillsData = portfolioData.about;
 
 
@@ -16,7 +17,7 @@ const AboutPage = () => {
             What I do?
           </h1>
         </div>
-        <div className="pt-8 mt-5 sm:col-span-12 ">
+        <div className="sm:col-span-12 ">
         <AboutCard data = {skillsData} />
         </div>
         </div>

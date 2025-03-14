@@ -1,36 +1,15 @@
 import React from 'react'
-
-import { motion } from "framer-motion"; //npm install typescript tailwindcss framer-motion
 import { getImageUrl } from '../utils';
-import { div } from 'framer-motion/client';
-import Buttons from '../button/Buttons';
+import {ListDegrees} from '../../interfaces/ListItems';
 
+const DegreeCard: React.FC<ListDegrees> = ({ data }) => {
 
-type Degree = {
-    logo_path?: string;
-    alt_name: string;
-    title: string;
-    subtitle: string;
-    duration: string;
-    descriptions: string[];
-    website_link?: string;
-};
-
-export interface DegreeProps {
-    data: Degree[];
-}
-
-
-const DegreeCard: React.FC<DegreeProps> = ({ degrees }) => {
-    // const backgroundColor = "bg-sky-400";
-    // const textColor = "text-blue-950";
-
-    if (!degrees || degrees.length === 0) {
+    if (!data || data.length === 0) {
         return <div>Loading...</div>;
     }
 
     return (
-        <>  {degrees.map((degree, index) => (
+        <>  {data.map((degree, index) => (
             <div className=" m-10 grid sm:grid-cols-12 gap-4" key={index}>
                 {/* Logo */}
                 <div className="sm:col-span-2 flex items-center justify-center">

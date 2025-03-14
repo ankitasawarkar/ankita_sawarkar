@@ -1,9 +1,7 @@
 import React from 'react'
 import portfolioData from "@/data/portfolioData.json";
 import ExperienceCards from '../components/cards/ExperienceCards';
-import { Navbar } from '../components/navbar/Navbar';
-import { getImageUrl } from '../components/utils';
-
+import Navbar from '../components/navbar/NavBarModel';
 
 const experienceData = portfolioData.experience;
 const experiences = experienceData.experiences;
@@ -21,11 +19,11 @@ const ExperiencePage = () => {
                         {experienceData.subTitle}
                     </h3>
                 </div>
-              
+
 
                 {/* Timeline */}
                 <div className="sm:col-span-12 m-20 mt-5 rounded  shdow-xl">
-                <ExperienceCards experiences={experiences} />
+                    <ExperienceCards experiences={experiences} />
                 </div>
             </div>
 

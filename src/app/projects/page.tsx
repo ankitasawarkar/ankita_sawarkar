@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar } from '../components/navbar/Navbar'
+import Navbar from '../components/navbar/NavBarModel'
 import portfolio from '@/data/portfolioData.json'
 import ProjectCard from '../components/cards/ProjectsCard';
 

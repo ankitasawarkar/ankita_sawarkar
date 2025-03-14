@@ -1,21 +1,21 @@
 'use client'
 import React from 'react'
-const resume = "/assets/CV.pdf";
 import portfolioData from "@/data/portfolioData.json";
 import { getImageUrl } from "../utils";
-import styles from './profile.module.css';
 import Buttons from '../button/Buttons';
 
-const ProfileContaint = () => {
+const resume = portfolioData.resume;//"/assets/CV.pdf";
+
+const ProfileContent = () => {
     return (
 
-        <section className={styles.container}>
-            <div className={styles.content}>
-                <h1 className={styles.title}>{portfolioData.name}</h1>
+        <section className="relative flex items-center justify-between mt-[49px] z-10 mx-[10%]">{/* {styles.container} */}
+            <div className="flex flex-col items-start text-[var(--color-text)] z-10">{/* {styles.content} */}
+                <h1 className="text-[72px] font-black mb-[33px] font-roboto bg-gradient-to-r from-white via-white to-transparent bg-[length:130%_100%] bg-clip-text text-transparent">{portfolioData.name}</h1> {/* {styles.title} */}
 
                 {/* Profile Info */}
-                {/* <h2 className={styles.subTitle}>{portfolioData.title}</h2> */}
-                <p className={styles.description}>
+                <h2 className="text-[30px] font-roboto mb-[20px]">{portfolioData.title}</h2>{/* {styles.subTitle}*/}
+                <p className="text-[30px] font-roboto"> {/* {styles.description} */}
                     {portfolioData.description}
                 </p>
                 {/* Socialmedia Info */}
@@ -30,7 +30,9 @@ const ProfileContaint = () => {
                 {/* 3. Resume Download Button (Normal)
             <Buttons url="/resume.pdf" keyType="download" title="Download Resume" /> */}
                 <a
-                    href={resume}
+                    href={resume} 
+                    target= "_blank"
+                    rel="noopener noreferrer" 
                     className="mt-4 px-4 py-2 bg-gray-700 hover:bg-gray-600 p-2 rounded-lg shadow"
                     download
                 >
@@ -39,13 +41,14 @@ const ProfileContaint = () => {
             </div>
             {/* Image */}
             <img
-                src={getImageUrl("hero-img.png")}
+                src={getImageUrl("hero1.jpg")}
                 alt={portfolioData.name}
-                className={styles.heroImg}
+                className="w-1/2 z-10 animate-floating rounded-full shadow-lg"
+                // className={styles.heroImg}
             />
 
         </section>
     )
 }
 
-export default ProfileContaint
+export default ProfileContent
