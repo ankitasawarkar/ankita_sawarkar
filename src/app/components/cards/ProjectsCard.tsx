@@ -5,10 +5,10 @@ import Buttons from '../button/Buttons';
 import {ListProject, chunkArray} from '../../interfaces/ListItems'
 
 const ProjectCard: React.FC<ListProject> = ({ data }) => {
+    const [expanded, setExpanded] = useState(false);
     if (!data || data.length === 0) {
         return <div>Loading...</div>;
     }
-    const [expanded, setExpanded] = useState(false);
     const chunkedCertificates = chunkArray(data, 2);
     return (
         <>
@@ -33,7 +33,7 @@ const ProjectCard: React.FC<ListProject> = ({ data }) => {
 
                                         <ul>
                                             {project.description.map((point, idx) => (
-                                                <li key={idx}>{point}</li>
+                                                <li key={`desc-${idx}`}>{point}</li>
                                             ))}
                                         </ul>
                                     </div>
@@ -59,7 +59,7 @@ const ProjectCard: React.FC<ListProject> = ({ data }) => {
                                         // </span> 
                                         
                                     ))} */}
-                                    <Skills skills={project.skills} />
+                                    <Skills skills={project.skills} platform="project"  />
 
                                 </div>
                                 <div className="self-end">

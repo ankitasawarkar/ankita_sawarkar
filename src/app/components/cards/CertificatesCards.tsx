@@ -2,6 +2,7 @@
 import React from 'react'
 import { getImageUrl } from '../utils';
 import {ListCertificates, chunkArray} from '../../interfaces/ListItems'
+import Image from 'next/image';
 
 const Certificates: React.FC<ListCertificates> = ({ data }) => {
     if (!data || data.length === 0) {
@@ -29,9 +30,10 @@ const Certificates: React.FC<ListCertificates> = ({ data }) => {
                             >
                                 <div className="bg-white shadow-md border border-indigo-100 rounded-2xl max-h-[200px] overflow-hidden w-full max-w-xs">
                                     <div className=" bg-gray-200 flex items-center justify-center">
-                                        <img
+                                        <Image
                                             src={getImageUrl(`${certificate.logo_path}`)}
                                             alt={certificate.title}
+                                            width={330} height={150}
                                             className="object-contain h-full max-h-[100px]"
                                         />
                                     </div>

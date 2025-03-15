@@ -1,6 +1,7 @@
 import React from 'react'
 import { getImageUrl } from '../utils';
 import {ListDegrees} from '../../interfaces/ListItems';
+import Image from 'next/image';
 
 const DegreeCard: React.FC<ListDegrees> = ({ data }) => {
 
@@ -14,8 +15,8 @@ const DegreeCard: React.FC<ListDegrees> = ({ data }) => {
                 {/* Logo */}
                 <div className="sm:col-span-2 flex items-center justify-center">
                     <a href={degree.website_link}>
-                        <img src={getImageUrl(`${degree.logo_path}`)} alt={degree.title} 
-                        className='rounded-full'/>
+                        <Image src={getImageUrl(`${degree.logo_path}`)} alt={degree.title} 
+                        className='rounded-full' width={200} height={200}/>
                     </a>
                 </div>
                 {/* Details */}

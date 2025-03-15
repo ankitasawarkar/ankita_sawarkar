@@ -1,6 +1,7 @@
 import React from 'react'
 import { getImageUrl } from '../utils'
 import {ListExperiences} from '../../interfaces/ListItems';
+import Image from 'next/image';
 
 const ExperienceCards: React.FC<ListExperiences> = ({ experiences }) => {
 
@@ -20,7 +21,7 @@ const ExperienceCards: React.FC<ListExperiences> = ({ experiences }) => {
 
                         <div className='flex items-starts'>
                             <a href={experience.company_url} target="_blank" rel="noopener noreferrer">
-                                <img className='w-20 h-20 mb-3 me-3 rounded-lg sm:mb-0'
+                                <Image className='w-20 h-20 mb-3 me-3 rounded-lg sm:mb-0' width={100} height={100}
                                     src={getImageUrl(`${experience.logo_path}`)}
                                     alt={experience.title} />
                             </a>

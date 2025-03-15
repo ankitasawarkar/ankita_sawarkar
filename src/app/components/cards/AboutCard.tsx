@@ -20,7 +20,7 @@ const AboutCard: React.FC<ListItemsProps> = ({ data }) => {
                             <div className='mt-4 mb-4'><Skills skills={section.skills} /></div>
                             <ul className='text-gray-500'>
                                 {section.description?.map((point, idx) => (
-                                    <li key={idx}>{point}</li>
+                                    <li key={`${section.title}-${idx}`}>{point}</li>
                                 ))}
                             </ul>
                         </div>

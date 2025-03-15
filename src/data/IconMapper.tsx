@@ -8,6 +8,7 @@ import {
 import { DiMsqlServer, DiMysql } from "react-icons/di";
 import { FaJava, FaGithubSquare, FaBitbucket, FaAws } from "react-icons/fa";
 import { getImageUrl } from "@/app/components/utils";
+import Image from "next/image";
 
 export  const skillIconMap: { [key: string]: React.ReactNode } = {
 
@@ -21,16 +22,16 @@ export  const skillIconMap: { [key: string]: React.ReactNode } = {
   ReactJS: <SiReact style={{ color: '#61DAFB', fontSize: '45px' }} />,
   JavaScript: <SiJavascript style={{ color: '#F7DF1E', fontSize: '45px' }} />,
 
-  Microservices: <img src={getImageUrl("microservice-icon.png")} className="mx-auto mb-2 " style={{ width: "45px" }} />,
+  Microservices: <Image src={getImageUrl("microservice-icon.png")} className="mx-auto mb-2 " alt="Microservices"  width={45} height={45} />,
   Swagger: <SiSwagger style={{ color: '#85EA2D', fontSize: '45px' }} />,
 
-  Python: <SiPython size={32} color='#306998' />,
+  Python: <SiPython style={{ color: '#306998', fontSize: '45px' }}  />,
   FastAPI: <SiFastapi style={{ color: '#009688', fontSize: '45px' }} />,
   Pandas: <SiPandas style={{ color: '#150458', fontSize: '45px' }} />,
   NumPy: <SiNumpy style={{ color: '#0080C1', fontSize: '45px' }} />,
   spaCy: <SiSpacy style={{ color: '#1D6F42', fontSize: '45px' }} />,
   OpenCV: <SiOpencv style={{ color: '#5C3EE8', fontSize: '45px' }} />,
-  NLP: <img src={getImageUrl("nlp_icon.png")} className="mx-auto mb-2" style={{ width: "35px" }} />,
+  NLP: <Image src={getImageUrl("nlp_icon.png")} className="mx-auto mb-2" alt="NLP"  width={45} height={45} />,
   Streamlit: <SiStreamlit style={{ color: '#FF4B2B', fontSize: '45px' }} />,
 
   SQL: <SiSqlite style={{ color: '#003B57', fontSize: '45px' }} />,
@@ -46,13 +47,13 @@ export  const skillIconMap: { [key: string]: React.ReactNode } = {
   Github: <FaGithubSquare style={{ color: '#181717', fontSize: '45px' }} />,
   Bitbucket: <FaBitbucket style={{ color: '#0052CC', fontSize: '45px' }} />,
 
-  Keras: <SiKeras size={32} style={{ color: '#D00000', fontSize: '100px' }} />,
-  TensorFlow: <SiTensorflow size={32} className='fill-orange-500' />,
-  LLM: <img src={getImageUrl("llm_logo.png")}  className="mx-auto mb-2" style={{ width: "45px" }} />,
-  FAISS: <img src={getImageUrl("faiss_logo.png")} className="mx-auto mb-2 h-auto bg-gray-500 rounded-full"style={{ width: "45px" }} />,
-  LangChain: <img src={getImageUrl("langchain_logo.png")} className="mx-auto mb-2" style={{ width: "45px" }} />,
+  Keras: <SiKeras style={{ color: '#D00000', fontSize: '45px' }} />,
+  TensorFlow: <SiTensorflow style={{ color: '#FF6F00', fontSize: '45px' }}  />,
+  LLM: <Image src={getImageUrl("llm_logo.png")}  className="mx-auto mb-2" alt="LLM"  width={45} height={45} />,
+  FAISS: <Image src={getImageUrl("faiss_logo.png")} className="mx-auto mb-2 h-auto bg-gray-500 rounded-full" alt="Faiss"  width={45} height={45} />,
+  LangChain: <Image src={getImageUrl("langchain_logo.png")} className="mx-auto mb-2" alt="LangChain"  width={45} height={45} />,
   OpenAI: <SiOpenai style={{ color: '#00A3E0', fontSize: '45px' }} />,
-  "Deep Learning": <img src={getImageUrl("deeplearning_ai_logo.png")} className="mx-auto mb-2 h-auto bg-gray-500 rounded-full" style={{ width: "45px" }} />,
-  Weaviate: <img src={getImageUrl("weaviate_logo.png")} className="mx-auto mb-2" style={{ width: "45px" }} />
+  "Deep Learning": <Image src={getImageUrl("deeplearning_ai_logo.png")} className="mx-auto mb-2 h-auto bg-gray-500 rounded-full" alt="DeepLearning"  width={45} height={45} />,
+  Weaviate: <Image src={getImageUrl("weaviate_logo.png")} className="mx-auto mb-2" alt="Weaviate"  width={45} height={45} />,
 
 };

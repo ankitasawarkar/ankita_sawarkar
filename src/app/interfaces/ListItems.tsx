@@ -61,11 +61,6 @@ export interface ListItemsProps {
     data: ListItem[];
 }
 
-interface Skills {
-    skillName: string;
-    fontAwesomeIcon: string;
-}
-
 // Utility function to chunk an array into smaller arrays of a specified size
 export function chunkArray<T>(array: T[], chunkSize: number): T[][] {
     const result: T[][] = [];
