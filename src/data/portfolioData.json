@@ -216,6 +216,17 @@
     "header_image_path": "experience.svg",
     "experiences": [
       {
+        "title": "Software Engineer",
+        "company": "Quadyster",
+        "company_url": "https://www.quadyster.com/",
+        "logo_path": "quadyster_logo.png",
+        "duration": "September 2025 - Present",
+        "location": "Davenport, IA",
+        "description": [
+          "Designed and developed a Domain 360° View platform to visualize and explore cross-domain relationships using chat interfaces, GraphQL APIs, AI-SDK, MCP server, React, and PostgreSQL (pgAdmin). Leveraged Copilot for full-cycle development, enabling contextual chat sessions, data summarization, and relationship mapping across domains. Integrated Stardog for semantic graph modeling and ontology-driven data linking to enhance query precision and contextual relevance."
+        ]
+      },
+      {
         "title": "Application Developer",
         "company": "IBM",
         "company_url": "https://www.ibm.com/in-en",

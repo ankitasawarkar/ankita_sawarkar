@@ -14,7 +14,7 @@ const ExperienceCards: React.FC<ListExperiences> = ({ experiences }) => {
             {experiences.map((experience, index) => (
                     <li key={`${experience.company}-${index}`} className="mb-10 ms-6">
 
-                        <div className="absolute w-3 h-3 bg-gray-900 rounded-full mt-1.5 -start-1.5 border border-gray-400 dark:border-white dark:bg-gray-100"></div>
+                        <div className="absolute w-3 h-3 bg-blue-900 rounded-full mt-1.5 -start-1.5 border border-blue-900"></div>
 
                         <div className='flex items-starts'>
                             <a href={experience.company_url} target="_blank" rel="noopener noreferrer">
