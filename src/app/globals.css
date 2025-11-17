@@ -3,30 +3,99 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Color Palette - Professional & Sophisticated */
+  --color-primary: #1e40af;        /* Deep Navy Blue */
+  --color-secondary: #475569;      /* Slate Gray */
+  --color-accent: #0ea5e9;         /* Sky Blue */
+  --color-dark: #1e293b;
+  --color-darker: #334155;
+  --color-text: #1e293b;           /* Dark Slate */
+  --color-text-secondary: #64748b; /* Medium Slate */
+  --color-bg: #ffffff;
+  --color-bg-secondary: #f8fafc;
+  
+  /* Fonts */
+  --font-roboto: "Roboto", system-ui, -apple-system, sans-serif;
+  --font-google-sans: "Google Sans", system-ui, -apple-system, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: var(--color-text);
+  background: linear-gradient(to bottom, #f8fafc, #e2e8f0);
+  min-height: 100vh;
+  font-family: var(--font-roboto);
+  line-height: 1.6;
+}
 
-  :root {
-    /* Colours */
-    --color-text: #fff;
-    --color-primary: #576cbc;
-    --color-secondary: #19376d;
-    --color-dark: #0b2447;
-    --color-bg: #04152d;
-
-    /* Fonts */
-    --font-roboto: "Roboto";
+/* Custom Animations */
+@keyframes floating {
+  0%, 100% {
+    transform: translateY(0px);
   }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-floating {
+  animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e2e8f0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, var(--color-primary), var(--color-secondary));
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, var(--color-secondary), var(--color-accent));
+}
+
+/* Utility Classes */
+.gradient-text {
+  background: linear-gradient(to right, var(--color-primary), var(--color-secondary), var(--color-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.card-shadow {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.font-google-sans {
+  font-family: var(--font-google-sans);
 }

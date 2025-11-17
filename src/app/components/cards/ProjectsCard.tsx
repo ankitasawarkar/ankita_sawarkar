@@ -63,7 +63,7 @@ const ProjectCard: React.FC<ListProject> = ({ data }) => {
 
                                 </div>
                                 <div className="self-end">
-                                    <Buttons url="https://github.com/myrepo" keyType="viewCode" title="View Code" />
+                                    <Buttons url={project.link} keyType="viewCode" title="View Code" />
                                 </div>
                             </div>
                         </div>

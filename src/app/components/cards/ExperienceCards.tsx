@@ -10,12 +10,9 @@ const ExperienceCards: React.FC<ListExperiences> = ({ experiences }) => {
     }
 
     return (
-        <>  
         <ol className="relative border-s border-gray-300 dark:border-gray-700">
             {experiences.map((experience, index) => (
-                <>
-
-                    <li key={index} className="mb-10 ms-6">
+                    <li key={`${experience.company}-${index}`} className="mb-10 ms-6">
 
                         <div className="absolute w-3 h-3 bg-gray-900 rounded-full mt-1.5 -start-1.5 border border-gray-400 dark:border-white dark:bg-gray-100"></div>
 
@@ -58,11 +55,8 @@ const ExperienceCards: React.FC<ListExperiences> = ({ experiences }) => {
                             </div>
                         </div>
                     </li>
-                </>
             ))}
         </ol>
-        </>
-
     )
 }
 

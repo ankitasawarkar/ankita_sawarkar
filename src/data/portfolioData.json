@@ -98,7 +98,7 @@
   ],
   "education": {
     "title": "Education",
-    "subTitle": "Basic Qualification and Certifcations",
+    "subTitle": "Basic Qualification and Certifications",
     "header_image_path": "education.svg",
     "degrees": [
       {
@@ -271,7 +271,7 @@
         "description": [
           "Developed LLM-based Chatbot for Research analysis to get relevant responses from specific articles by document upload and URL link using Vector database semantic search"
         ],
-        "link": "/project-a",
+        "link": "https://github.com/ankitasawarkar/research-analysis-tool",
         "logo_path": "project-a.png",
         "creation_on": "2023-04-13",
         "skills": [
@@ -287,7 +287,7 @@
         "description": [
           "LLM Chatbot system for College, Implement OpenAI functionality with prompt engineering to get response with human touch about internal College database will provide all detailed information about the campus, students fees, and grad with conversation format."
         ],
-        "link": "/project-b",
+        "link": "https://github.com/ankitasawarkar/CollegeQnA",
         "logo_path": "project-b.png",
         "creation_on": "2023-04-13",
         "skills": [
@@ -307,7 +307,7 @@
           "Built a CI/CD pipeline for automated deployment, testing, security checks, and containerization.",
           "Streamlined DevOps practices to accelerate releases and maintain competitive edge."
         ],
-        "link": "https://github.com/example/project-b",
+        "link": "https://github.com/ankitasawarkar/search-engine-CTCD-pipeline",
         "logo_path": "project-b.png",
         "creation_on": "2023-04-13",
         "skills": [
