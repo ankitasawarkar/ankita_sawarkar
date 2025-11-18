@@ -8,11 +8,11 @@ const AboutSection = () => {
   return (
     <div className="container mx-auto px-4 py-20">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl font-bold text-blue-900 mb-4">
+        <div className="mb-16">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 mb-4">
             What I Do
           </h1>
-          <p className="text-slate-600 text-lg max-w-2xl mx-auto">
+          <p className="text-base md:text-lg text-gray-600 leading-relaxed max-w-3xl">
             Passionate about creating innovative solutions across multiple technology domains
           </p>
         </div>
